@@ -1,0 +1,55 @@
+module hmj_ld_top (
+	input 	i_sys_clk,
+	input 	i_reset_n,
+	input 	i_uart_rxd,
+	output 	o_uart_txd,
+	
+	output [19:0] 	o_jgcs_data,
+	output 			o_jgcs_data_vld
+	);
+
+	wire [87:0]		uart_rx_data;
+	wire 			uart_rx_data_vld;
+	
+	wire [31:0]		uart_tx_data;
+	wire 			uart_tx_data_vld;
+	
+	UartTx UartTx(
+	.Clk			(i_sys_clk			),
+	.RstN			(i_reset_n			),
+	.DataEn			(uart_tx_data_vld	),	
+	.DataIn			(uart_tx_data		),
+		
+	.Tx				(o_uart_txd			)
+	);
+	
+	UartRx(
+	.Clk			(i_sys_clk			),
+	.RstN			(i_reset_n			),
+	.Rxd			(i_uart_rxd			),		
+	
+	.RxFull			(uart_rx_data_vld	),
+	.DataBuff 		(uart_rx_data		)
+	);
+	
+	RecDecode RecDecode(
+	.Clk			(i_sys_clk			),
+	.RstN			(i_reset_n			),
+	.DataEn			(uart_rx_data_vld	),
+	.DataIn			(uart_rx_data		),
+		
+	.OutEn			(o_jgcs_data_vld	),
+	.DistOut		(o_jgcs_data		)
+	);
+	
+	Controller Controller(
+	.Clk			(i_sys_clk	),
+	.RstN			(i_reset_n	),
+	.KeyA			(	1			),
+	.KeyB			(	0			),
+		
+	.DataEn			(uart_tx_data_vld	),
+	.DataOut		(uart_tx_data		)
+	);
+	
+endmodule 

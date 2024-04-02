@@ -1,0 +1,10 @@
+PLL_Name	ov7725_hdmi:ov7725_hdmi|pll_clk:u_pll_clk|altpll:altpll_component|pll_clk_altpll:auto_generated|pll1
+PLLJITTER	30
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	ov7725_hdmi:ov7725_hdmi|pll_hdmi:pll_hdmi_inst|altpll:altpll_component|pll_hdmi_altpll:auto_generated|pll1
+PLLJITTER	30
+PLLSPEmax	84
+PLLSPEmin	-53
+

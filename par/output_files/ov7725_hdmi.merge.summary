@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Tue Apr 02 12:46:38 2024
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : ov7725_hdmi
+Top-level Entity Name : my_top
+Family : Cyclone IV E
+Total logic elements : 4,600 / 10,320 ( 45 % )
+    Total combinational functions : 3,562 / 10,320 ( 35 % )
+    Dedicated logic registers : 2,220 / 10,320 ( 22 % )
+Total registers : 2236
+Total pins : 84 / 180 ( 47 % )
+Total virtual pins : 0
+Total memory bits : 295,424 / 423,936 ( 70 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 2 / 2 ( 100 % )

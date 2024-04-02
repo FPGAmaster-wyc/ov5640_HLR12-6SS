@@ -1,0 +1,96 @@
+Quartus II Archive log --	C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ov7725_hdmi_tmp_archive.qarlog
+
+Archive:	C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ov7725_hdmi_tmp_archive.qar
+Date:		Fri Mar 29 10:29:47 2024
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Full Version
+
+	=========== Files Selected: ===========
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/doc/ov7725_hdmi.tcl
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/db/ov7725_hdmi.cmp.hdb
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/db/ov7725_hdmi.db_info
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/incremental_db/compiled_partitions/ov7725_hdmi.db_info
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/ddio_out/ddio_out.bsf
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/ddio_out/ddio_out.cmp
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/ddio_out/ddio_out.inc
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/ddio_out/ddio_out.qip
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/ddio_out/ddio_out.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/ddio_out/ddio_out_bb.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/ddio_out/ddio_out_inst.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/pll_clk.qip
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/pll_clk.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/pll_hdmi.ppf
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/pll_hdmi.qip
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/pll_hdmi.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ipcore/pll_hdmi_inst.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/my_top.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/output_files/Chain1.cdf
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ov7725_hdmi.qpf
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ov7725_hdmi.qsf
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ov7725_hdmi_assignment_defaults.qdf
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/cmos_capture_data.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hdmi/asyn_rst_syn.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hdmi/dvi_encoder.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hdmi/dvi_transmitter_top.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hdmi/hdmi_top.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hdmi/serializer_10_to_1.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hdmi/video_driver.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hmj_ld/Controller.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hmj_ld/RecDecode.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hmj_ld/UartRx.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hmj_ld/UartTx.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/hmj_ld/hmj_ld_top.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/i2c_dri.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/i2c_ov5640_rgb565_cfg.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/i2c_ov7725_rgb565_cfg.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/ADD.qip
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/ADD.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/ADD_bb.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/ADD_inst.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/DIV.qip
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/DIV.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/DIV_bb.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/DIV_inst.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/MULT.qip
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/MULT.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/MULT_inst.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/ROM.qip
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/ROM.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/ROM_bb.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/ROM_inst.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/convert.qip
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/convert.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/IP/convert_inst.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/Kalman.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/Kalman_forecastOne.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/Kalman_forecastTow.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/Kalman_update.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/kalman/ROM_drive.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/key_control.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/ld_rec_en_unit.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/ov5640_hdmi.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/ov7725_hdmi.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/rdfifo.qip
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/rdfifo.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/sdram_cmd.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/sdram_controller.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/sdram_ctrl.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/sdram_data.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/sdram_fifo_ctrl.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/sdram_para.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/sdram_top.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/sdram/wrfifo.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/seg_src/freq1.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/seg_src/seg_encode.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/seg_src/seg_show.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/seg_src/sel_encode.v
+C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/rtl/seg_src/sel_seg_code.v
+	======= Total: 79 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Fri Mar 29 10:29:52 2024
+Source archive file:	C:/Users/a/Desktop/bishe/my_hmbld_ov7725_kalman_hdmi_new/par/ov7725_hdmi_tmp_archive.qar
+Archive was extracted into	C:/Users/a/Desktop/bishe/ov5640_hdmi_radar/
+		 - successfully.

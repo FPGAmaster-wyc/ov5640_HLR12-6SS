@@ -1,0 +1,49 @@
+
+State Machine - |my_top|seg_show:seg_show|sel_seg_code:sel_seg_code_dut|sel_code:sel_code_dut|state
+Name state.101 state.100 state.011 state.010 state.001 state.000 
+state.000 0 0 0 0 0 0 
+state.001 0 0 0 0 1 1 
+state.010 0 0 0 1 0 1 
+state.011 0 0 1 0 0 1 
+state.100 0 1 0 0 0 1 
+state.101 1 0 0 0 0 1 
+
+State Machine - |my_top|hmj_ld_top:hmj_ld1_top|RecDecode:RecDecode|STATE
+Name STATE.RETU STATE.SEND STATE.READ STATE.IDLE 
+STATE.IDLE 0 0 0 0 
+STATE.READ 0 0 1 1 
+STATE.SEND 0 1 0 1 
+STATE.RETU 1 0 0 1 
+
+State Machine - |my_top|hmj_ld_top:hmj_ld1_top|UartRx:comb_3|State
+Name State.READ State.RETU State.IDLE 
+State.IDLE 0 0 0 
+State.READ 1 0 1 
+State.RETU 0 1 1 
+
+State Machine - |my_top|hmj_ld_top:hmj_ld1_top|Controller:CONM|c_state
+Name c_state.S3 c_state.S2 c_state.S1 c_state.0000 c_state.S4 
+c_state.0000 0 0 0 0 0 
+c_state.S1 0 0 1 1 0 
+c_state.S2 0 1 0 1 0 
+c_state.S3 1 0 0 1 0 
+c_state.S4 0 0 0 1 1 
+
+State Machine - |my_top|hmj_ld_top:hmj_ld1_top|Controller:CONM|UartTx:TX|c_state
+Name c_state.CHECK c_state.DATA c_state.STATE c_state.0000 c_state.STOP 
+c_state.0000 0 0 0 0 0 
+c_state.STATE 0 0 1 1 0 
+c_state.DATA 0 1 0 1 0 
+c_state.CHECK 1 0 0 1 0 
+c_state.STOP 0 0 0 1 1 
+
+State Machine - |my_top|ov5640_hdmi:ov5640_hdmi|i2c_dri:u_i2c_dr|cur_state
+Name cur_state.st_stop cur_state.st_data_rd cur_state.st_addr_rd cur_state.st_data_wr cur_state.st_addr8 cur_state.st_addr16 cur_state.st_sladdr cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 0 
+cur_state.st_sladdr 0 0 0 0 0 0 1 1 
+cur_state.st_addr16 0 0 0 0 0 1 0 1 
+cur_state.st_addr8 0 0 0 0 1 0 0 1 
+cur_state.st_data_wr 0 0 0 1 0 0 0 1 
+cur_state.st_addr_rd 0 0 1 0 0 0 0 1 
+cur_state.st_data_rd 0 1 0 0 0 0 0 1 
+cur_state.st_stop 1 0 0 0 0 0 0 1 
