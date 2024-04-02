@@ -1,2 +1,4 @@
+Info (10281): Verilog HDL Declaration information at Controller.v(16): object "KeyA" differs only in case from object "KEYA" in the same scope
+Info (10281): Verilog HDL Declaration information at Controller.v(17): object "KeyB" differs only in case from object "KEYB" in the same scope
 Info (10281): Verilog HDL Declaration information at video_driver.v(15): object "h_disp" differs only in case from object "H_DISP" in the same scope
 Info (10281): Verilog HDL Declaration information at video_driver.v(17): object "v_disp" differs only in case from object "V_DISP" in the same scope

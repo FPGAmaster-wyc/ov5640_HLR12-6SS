@@ -1,149 +1,129 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2024/03/18 16:36:59
-// Design Name: 
-// Module Name: gen_uart_data
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+//按键控制模块
 
 module Controller(
-	input clk_a,
-	input rst_n,
-	output txd
+		Clk,
+		RstN,
+		KeyA,
+		KeyB,
+		
+		DataEn,
+		DataOut
 );
 
-	reg [39:0] temp_data;
-	reg [7:0] tx_data;
-	reg tx_valid;
-	wire ready;
-
-	reg [31:0] delay_cnt;	//发送一个坐标延时
-
-
-	reg [3:0] c_state, n_state;
-	parameter   S0 = 0,
-		        S1 = 1,	//发送数据
-                S2 = 2,	//数据改变
-				S3 = 3,	//发送结束  延时
-				S4 = 4; //坐标改变
-
-	UartTx #(
-	.CHECK_BIT ("None"	)	,       //“None”无校验  “Odd”奇校验  “Even”偶校验
-	.BPS       (115200	)	,       //系统波特率 
-	.CLK       (50_000_000)	,   	//系统时钟频率 hz 
-	.DATA_BIT  (8		)	,       //数据位（6、7、8）
-	.STOP_BIT  (1       )   		//停止位
-) TX (
-	.i_reset(!rst_n),
-	.i_clk(clk_a),
-	.i_data(tx_data),
-	.i_valid(tx_valid),
-	.o_ready(ready),
-	.o_txd(txd)
-);
-
-	always @(posedge clk_a, negedge rst_n) begin
-		if (!rst_n)
-			c_state <= 0;
-		else 
-			c_state <= n_state;
+	input						Clk;
+	input						RstN;
+	input						KeyA;
+	input						KeyB;
+	
+	output reg				DataEn;
+//	output reg	[31:0]	DataOut;
+	output reg	[39:0]	DataOut;
+	
+	reg			[25:0]	ClkCnt;
+	reg			[1:0]		STATE;
+	
+	parameter				IDLE 	= 2'b00,		// "空闲"状态
+								KEYA 	= 2'b01,		// "发送单次测量命令"状态
+								KEYB	= 2'b10,		// "发送连续测量命令"状态
+								RETU	= 2'b11;		// "返回"状态
+								
+always@(posedge Clk or negedge RstN)
+begin
+	if (~RstN)
+	begin
+		ClkCnt <= 1'b0;
+		STATE <= IDLE;
+		DataEn <= 1'b0;
+		DataOut <= 1'b0;
 	end
-
-	always @(*) begin
-		case (c_state)
-			S0	:	begin
-						n_state = S1;
-			end
-
-			S1	:	begin
-						if (ready)
-                      		n_state = S2;
-						else
-							n_state = S1;
-			end
-
-			S2 	:	begin
-						if (temp_data == 0)
-							n_state = S3;
-						else
-							n_state = S1;
-			end
-
-            S3  :   begin
-						if (delay_cnt <= 32'd5_000_000)
-                        	n_state = S3;
-						else
-							n_state = S4;
-            end	
-
-			S4	:	begin
-						n_state = S0;
-			end
-
-			default :	n_state = 0;
-		endcase 
-	end
-
-	always @(posedge clk_a, negedge rst_n) begin
-		if (!rst_n)
+	else
+	begin
+		
+		case(STATE)
+			
+			IDLE:
 			begin
-				tx_data <= 0;
-				temp_data <= 40'h55_5a_02_D3_84;
-				tx_valid <= 0;
+				ClkCnt <= 1'b0;
+				DataEn <= 1'b0;
+				DataOut <= 1'b0;
+				if (~KeyA)		// 在IDLE状态中，通过if...else...语句响应按键输入，可更换为case语句
+				begin
+					STATE <= KEYA;
+				end
+				else if (~KeyB)
+				begin
+					STATE <= KEYB;
+				end
+				else
+				begin
+					STATE <= IDLE;
+				end
 			end
-		else 
-			case (n_state)
-				S0	:	begin						
-							temp_data <= 40'h55_5a_02_D3_84;
-				end
-
-				S1	:	begin						
-							tx_valid <= 1;
-							tx_data <= temp_data[39:32];
-				end
-
-				S2	:	begin						
-							temp_data <= temp_data << 8;
-							tx_valid <= 0;	
-				end
-
-                S3  :   begin
-							tx_valid <= 0;							
-                end
-
-				S4	:	begin
-				    
-				end
-			endcase 
-	end
-
-	always @(posedge clk_a) begin
-		if (!rst_n)
+			
+			KEYA:
 			begin
-				delay_cnt <= 0;
+				if (ClkCnt < 'd50000000)			// 1秒内连续判断按键状态，简单"去抖"，可使用其它方法实现
+				begin
+					ClkCnt <= ClkCnt + 1'b1;
+					if (~KEYA)
+					begin
+						STATE <= STATE;
+					end
+					else	// 在1秒内检测到KEYA按键被释放，则返回到IDLE
+					begin
+						STATE <= IDLE;
+					end
+				end
+				else
+				begin
+					DataEn <= 1'b1;
+//					DataOut <= 32'h80_06_02_78;   	// 单次测量
+					DataOut <= 40'h55_5A_02_D3_84;  	// 执行查询
+					STATE <= RETU;
+				end
 			end
-		else if (c_state == 0)
-			delay_cnt <= 0;
-		else 
-			delay_cnt <= delay_cnt + 1;
+			
+			KEYB:
+			begin
+				if (ClkCnt < 'd50000000)			// 1秒内连续判断按键状态，简单"去抖"，可使用其它方法实现
+				begin
+					ClkCnt <= ClkCnt + 1'b1;
+					if (~KEYB)
+					begin
+						STATE <= STATE;
+					end
+					else
+					begin  // 在1秒内检测到KEYB按键被释放，则返回到IDLE
+						STATE <= IDLE;
+					end
+				end
+				else
+				begin
+					DataEn <= 1'b1;
+//					DataOut <= 32'h80_06_03_77;		// 多次测量
+//					DataOut <= 40'h55_5A_03_D1_00_83;  // 雷达关：	
+					DataOut <= 40'h55_5A_03_D1_01_84;  // 雷达开：
+					STATE <= RETU;
+				end
+			end		
+			
+			RETU:
+			begin
+				ClkCnt <= 1'b0;
+				DataEn <= DataEn;
+				DataOut <= DataOut;
+				STATE <= IDLE;
+			end
+			
+		endcase
 	end
-
+end
 
 endmodule
 
-
-
+		
+		
+		
+		
+		

@@ -126,8 +126,8 @@ GND                          : D7        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
 o_seg[7]                     : D9        : output : 2.5 V             :         : 7         : Y              
 GND                          : D10       : gnd    :                   :         :           :                
-o_bj_led1                    : D11       : output : 2.5 V             :         : 7         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 7         :                
+o_bj_led1                    : D12       : output : 2.5 V             :         : 7         : Y              
 VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
 sdram_addr[2]                : D14       : output : 2.5 V             :         : 7         : Y              
 sdram_addr[9]                : D15       : output : 2.5 V             :         : 6         : Y              
@@ -141,7 +141,7 @@ i_hmbld1_uart_rxd            : E6        : input  : 2.5 V             :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : E7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 7         :                
+o_bj_led2                    : E10       : output : 2.5 V             :         : 7         : Y              
 sdram_addr[1]                : E11       : output : 2.5 V             :         : 7         : Y              
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
@@ -230,7 +230,7 @@ sdram_data[13]               : K15       : bidir  : 2.5 V             :         
 sdram_data[12]               : K16       : bidir  : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 2         :                
+o_hmbld2_uart_txd            : L3        : output : 2.5 V             :         : 2         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 2         :                
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L6        :        :                   :         : 2         :                
@@ -262,7 +262,7 @@ key_ctrl[1]                  : M15       : input  : 2.5 V             :         
 GND+                         : M16       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N2        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   :         : 3         :                
+i_hmbld2_uart_rxd            : N3        : input  : 2.5 V             :         : 3         : Y              
 VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N5        :        :                   :         : 3         :                
 cam_data[5]                  : N6        : input  : 2.5 V             :         : 3         : Y              

@@ -20,11 +20,14 @@ module hmj_ld_top (
 	
 	wire [15:0]		jl_data_r;
 	
-	Controller CONM(
-	.clk_a(i_sys_clk),
-	.rst_n(i_reset_n),
-	.txd(o_uart_txd)
-);	
+	UartTx UartTx(
+	.Clk			(i_sys_clk			),
+	.RstN			(i_reset_n			),
+	.DataEn		(uart_tx_data_vld	),	
+	.DataIn		(uart_tx_data		),
+		
+	.Tx			(o_uart_txd			)
+	);
 	
 	UartRx(
 	.Clk			(i_sys_clk			),
@@ -45,7 +48,17 @@ module hmj_ld_top (
 	.DistOut		(o_jgcs_data		),
 	.jl_data		(jl_data_r			)
 	);
-
+	
+	Controller Controller(
+	.Clk			(i_sys_clk	),
+	.RstN			(i_reset_n	),
+	.KeyA			(key_hmjld	),
+	.KeyB			(	1			),
+		
+	.DataEn		(uart_tx_data_vld	),
+	.DataOut		(uart_tx_data		)
+	);
+	
 	
 	assign jl_data[19:16] = jl_data_r/10000;    // 百位
 	assign jl_data[15:12] = jl_data_r/1000%10;  // 十位

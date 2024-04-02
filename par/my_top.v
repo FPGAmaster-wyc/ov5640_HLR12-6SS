@@ -33,10 +33,10 @@ module my_top(
 	 //毫米波雷达
 	 input 					i_hmbld1_uart_rxd	,
 	 output 					o_hmbld1_uart_txd	,	
-	 //input 					i_hmbld2_uart_rxd	,
-	 //output 					o_hmbld2_uart_txd	,
-	 output              o_bj_led1			,
-	 //output              o_bj_led2			,
+	 input 					i_hmbld2_uart_rxd	,
+	 output 					o_hmbld2_uart_txd	,
+	 output              o_bj_led1			,  
+	 output              o_bj_led2			,
 	 //数码管
 	 output 		[5:0]		o_sel,
 	 output  		[7:0]		o_seg
@@ -112,8 +112,6 @@ hmj_ld_top hmj_ld1_top(
 	.o_jgcs_data_vld	(jl1_data_vld		),
 	.jl_data 			(jl1_data			)
 	);
-	
-	/*
 hmj_ld_top hmj_ld2_top(
 	.i_sys_clk			(sys_clk  			),
 	.i_reset_n			(sys_rst_n			),
@@ -126,10 +124,9 @@ hmj_ld_top hmj_ld2_top(
 	.o_jgcs_data_vld	(jl2_data_vld		),
 	.jl_data 			(jl2_data			)
 	);
-	*/
-	assign o_bj_led1	=(jl1_data > 20'd35) ? 0 : 1;	//警报，后期可以添加蜂鸣器
+	assign o_bj_led1	=(jl1_data > 20'd35) ? 1 : 0;
 	
-	//assign o_bj_led2  =(jl2_data > 20'd35) ? 0 : 1;
+	assign o_bj_led2  =(jl2_data > 20'd35) ? 0 : 1;
 	
 	
 /************************************************/
@@ -161,7 +158,7 @@ hmj_ld_top hmj_ld2_top(
 /************************************************/
 //							数码管
 /************************************************/
-/*
+
 key_control key_control(
 	.i_sys_clk		(sys_clk			),
 	.i_sys_rst_n	(sys_rst_n		),
@@ -169,19 +166,16 @@ key_control key_control(
 	.i_key			(key_ctrl		),
 	.o_crtl_en		(show_crtl_en	)
 );
-*/
-
 seg_show seg_show(
 	.clk				(sys_clk  	), 
 	.rst_n			(sys_rst_n	), 
-	.show_data		({4'd0,jl1_data}), 		//仅显示一个雷达
+	.show_data		(show_data  ), 
 	.seg				(o_seg		), 
 	.sel				(o_sel		)  
 );
 
 //assign show_data = show_crtl_en ? {4'd0,jl2_data} : {4'd0,jl1_data};
 
-/*
 always @ (posedge sys_clk or negedge sys_rst_n  )
 begin
 	if (~sys_rst_n)
@@ -193,6 +187,5 @@ begin
 	else
 		show_data <= show_data;			
 end
-*/
                    
 endmodule

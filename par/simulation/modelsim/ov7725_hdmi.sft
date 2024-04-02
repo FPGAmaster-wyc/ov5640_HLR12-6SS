@@ -1,4 +1,4 @@
-set tool_name "ModelSim-Altera (Verilog)"
+set tool_name "ModelSim (Verilog)"
 set corner_file_list {
 	{{"Slow -8 1.2V 85 Model"} {ov7725_hdmi_8_1200mv_85c_slow.vo ov7725_hdmi_8_1200mv_85c_v_slow.sdo}}
 	{{"Slow -8 1.2V 0 Model"} {ov7725_hdmi_8_1200mv_0c_slow.vo ov7725_hdmi_8_1200mv_0c_v_slow.sdo}}
