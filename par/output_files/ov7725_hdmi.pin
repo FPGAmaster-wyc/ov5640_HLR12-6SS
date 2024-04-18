@@ -110,7 +110,7 @@ VCCIO8                       : C7        : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
 o_seg[2]                     : C9        : output : 2.5 V             :         : 7         : Y              
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C11       :        :                   :         : 7         :                
+o_bj_led4                    : C11       : output : 2.5 V             :         : 7         : Y              
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
 sdram_addr[3]                : C14       : output : 2.5 V             :         : 7         : Y              
@@ -126,8 +126,8 @@ GND                          : D7        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
 o_seg[7]                     : D9        : output : 2.5 V             :         : 7         : Y              
 GND                          : D10       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 7         :                
-o_bj_led1                    : D12       : output : 2.5 V             :         : 7         : Y              
+o_bj_led1                    : D11       : output : 2.5 V             :         : 7         : Y              
+beep                         : D12       : output : 2.5 V             :         : 7         : Y              
 VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
 sdram_addr[2]                : D14       : output : 2.5 V             :         : 7         : Y              
 sdram_addr[9]                : D15       : output : 2.5 V             :         : 6         : Y              
@@ -156,7 +156,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : F6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F9        :        :                   :         : 7         :                
+o_bj_led3                    : F9        : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 7         :                
 sdram_addr[0]                : F11       : output : 2.5 V             :         : 7         : Y              
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
