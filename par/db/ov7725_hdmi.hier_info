@@ -70,11 +70,8 @@ i_hmbld1_uart_rxd => i_hmbld1_uart_rxd.IN1
 o_hmbld1_uart_txd << hmj_ld_top:hmj_ld1_top.o_uart_txd
 i_hmbld2_uart_rxd => i_hmbld2_uart_rxd.IN1
 o_hmbld2_uart_txd << hmj_ld_top:hmj_ld2_top.o_uart_txd
-o_bj_led1 << LessThan0.DB_MAX_OUTPUT_PORT_TYPE
-o_bj_led2 << <GND>
-o_bj_led3 << <GND>
-o_bj_led4 << <GND>
-beep << LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+o_bj_led1 << o_bj_led1.DB_MAX_OUTPUT_PORT_TYPE
+o_bj_led2 << o_bj_led1.DB_MAX_OUTPUT_PORT_TYPE
 o_sel[0] << seg_show:seg_show.sel
 o_sel[1] << seg_show:seg_show.sel
 o_sel[2] << seg_show:seg_show.sel

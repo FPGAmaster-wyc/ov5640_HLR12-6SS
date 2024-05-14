@@ -35,11 +35,8 @@ module my_top(
 	 output 					o_hmbld1_uart_txd	,	
 	 input 					i_hmbld2_uart_rxd	,
 	 output 					o_hmbld2_uart_txd	,
-	 output              o_bj_led1			,
+	 output              o_bj_led1			,  
 	 output              o_bj_led2			,
-	 output              o_bj_led3			,
-	 output              o_bj_led4			,
-	 output					beep					,
 	 //数码管
 	 output 		[5:0]		o_sel,
 	 output  		[7:0]		o_seg
@@ -127,9 +124,9 @@ hmj_ld_top hmj_ld2_top(
 	.o_jgcs_data_vld	(jl2_data_vld		),
 	.jl_data 			(jl2_data			)
 	);
-	assign o_bj_led1	=(jl1_data > 20'd35) ? 1 : 0;
-	assign	beep = o_bj_led1;
-	//assign o_bj_led2  =(jl2_data > 20'd35) ? 0 : 1;
+	assign o_bj_led1	= ((jl1_data < 20'd35)&&(jl1_data > 3)) ? 1 : 0;
+	
+	assign o_bj_led2  = o_bj_led1;
 	
 	
 /************************************************/

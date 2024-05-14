@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ov7725_hdmi
-Thu Apr 18 17:04:11 2024
+Tue May 14 14:38:54 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -234,16 +234,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 18 17:04:10 2024       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 14 14:38:54 2024       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; ov7725_hdmi                                 ;
 ; Top-level Entity Name              ; my_top                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4,487                                       ;
-;     Total combinational functions  ; 4,099                                       ;
+; Total logic elements               ; 4,491                                       ;
+;     Total combinational functions  ; 4,103                                       ;
 ;     Dedicated logic registers      ; 1,232                                       ;
 ; Total registers                    ; 1248                                        ;
-; Total pins                         ; 90                                          ;
+; Total pins                         ; 87                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 37,376                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -356,163 +356,163 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                ; Library ;
-+------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
-; ../rtl/i2c_ov5640_rgb565_cfg.v     ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/i2c_ov5640_rgb565_cfg.v     ;         ;
-; ../rtl/ov5640_hdmi.v               ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/ov5640_hdmi.v               ;         ;
-; ../rtl/kalman/IP/MULT.v            ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/MULT.v            ;         ;
-; ../rtl/kalman/IP/DIV.v             ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/DIV.v             ;         ;
-; ../rtl/kalman/IP/ADD.v             ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/ADD.v             ;         ;
-; ../rtl/kalman/Kalman_update.v      ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/Kalman_update.v      ;         ;
-; ../rtl/kalman/Kalman_forecastTow.v ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/Kalman_forecastTow.v ;         ;
-; ../rtl/kalman/Kalman_forecastOne.v ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/Kalman_forecastOne.v ;         ;
-; ../rtl/kalman/IP/convert.v         ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/convert.v         ;         ;
-; ../rtl/kalman/IP/ROM.v             ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/ROM.v             ;         ;
-; ../rtl/kalman/ROM_drive.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/ROM_drive.v          ;         ;
-; ../rtl/kalman/Kalman.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/Kalman.v             ;         ;
-; ../rtl/seg_src/sel_seg_code.v      ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/sel_seg_code.v      ;         ;
-; ../rtl/seg_src/sel_encode.v        ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/sel_encode.v        ;         ;
-; ../rtl/seg_src/seg_show.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/seg_show.v          ;         ;
-; ../rtl/seg_src/seg_encode.v        ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/seg_encode.v        ;         ;
-; ../rtl/seg_src/freq1.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/freq1.v             ;         ;
-; ../rtl/hmj_ld/UartTx.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/UartTx.v             ;         ;
-; ../rtl/hmj_ld/UartRx.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/UartRx.v             ;         ;
-; ../rtl/hmj_ld/RecDecode.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/RecDecode.v          ;         ;
-; ../rtl/hmj_ld/hmj_ld_top.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/hmj_ld_top.v         ;         ;
-; ../rtl/hmj_ld/Controller.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/Controller.v         ;         ;
-; ../rtl/hdmi/video_driver.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/video_driver.v         ;         ;
-; ../rtl/hdmi/serializer_10_to_1.v   ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/serializer_10_to_1.v   ;         ;
-; ../rtl/hdmi/hdmi_top.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/hdmi_top.v             ;         ;
-; ../rtl/hdmi/dvi_transmitter_top.v  ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/dvi_transmitter_top.v  ;         ;
-; ../rtl/hdmi/dvi_encoder.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/dvi_encoder.v          ;         ;
-; ../rtl/hdmi/asyn_rst_syn.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/asyn_rst_syn.v         ;         ;
-; ipcore/ddio_out/ddio_out.v         ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/ddio_out/ddio_out.v  ;         ;
-; ../rtl/sdram/wrfifo.v              ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/wrfifo.v              ;         ;
-; ../rtl/sdram/sdram_top.v           ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_top.v           ;         ;
-; ../rtl/sdram/sdram_para.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_para.v          ;         ;
-; ../rtl/sdram/sdram_fifo_ctrl.v     ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_fifo_ctrl.v     ;         ;
-; ../rtl/sdram/sdram_data.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_data.v          ;         ;
-; ../rtl/sdram/sdram_ctrl.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_ctrl.v          ;         ;
-; ../rtl/sdram/sdram_controller.v    ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_controller.v    ;         ;
-; ../rtl/sdram/sdram_cmd.v           ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_cmd.v           ;         ;
-; ../rtl/sdram/rdfifo.v              ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/rdfifo.v              ;         ;
-; ../rtl/i2c_dri.v                   ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/i2c_dri.v                   ;         ;
-; ../rtl/cmos_capture_data.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/cmos_capture_data.v         ;         ;
-; ipcore/pll_hdmi.v                  ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/pll_hdmi.v           ;         ;
-; ipcore/pll_clk.v                   ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/pll_clk.v            ;         ;
-; my_top.v                           ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/my_top.v                    ;         ;
-; ../rtl/ld_rec_en_unit.v            ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/ld_rec_en_unit.v            ;         ;
-; ../rtl/key_control.v               ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/key_control.v               ;         ;
-; altpll.tdf                         ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altpll.tdf                   ;         ;
-; aglobal131.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc               ;         ;
-; stratix_pll.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_pll.inc              ;         ;
-; stratixii_pll.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratixii_pll.inc            ;         ;
-; cycloneii_pll.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/cycloneii_pll.inc            ;         ;
-; db/pll_clk_altpll.v                ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/pll_clk_altpll.v         ;         ;
-; db/pll_hdmi_altpll.v               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/pll_hdmi_altpll.v        ;         ;
-; dcfifo.tdf                         ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/dcfifo.tdf                   ;         ;
-; lpm_counter.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_counter.inc              ;         ;
-; lpm_add_sub.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_add_sub.inc              ;         ;
-; altdpram.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
-; a_graycounter.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_graycounter.inc            ;         ;
-; a_fefifo.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_fefifo.inc                 ;         ;
-; a_gray2bin.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_gray2bin.inc               ;         ;
-; dffpipe.inc                        ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/dffpipe.inc                  ;         ;
-; alt_sync_fifo.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/alt_sync_fifo.inc            ;         ;
-; lpm_compare.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_compare.inc              ;         ;
-; altsyncram_fifo.inc                ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram_fifo.inc          ;         ;
-; db/dcfifo_nnl1.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/dcfifo_nnl1.tdf          ;         ;
-; db/a_gray2bin_7ib.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/a_gray2bin_7ib.tdf       ;         ;
-; db/a_graycounter_677.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/a_graycounter_677.tdf    ;         ;
-; db/a_graycounter_2lc.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/a_graycounter_2lc.tdf    ;         ;
-; db/altsyncram_em31.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/altsyncram_em31.tdf      ;         ;
-; db/dffpipe_pe9.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/dffpipe_pe9.tdf          ;         ;
-; db/alt_synch_pipe_vd8.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/alt_synch_pipe_vd8.tdf   ;         ;
-; db/dffpipe_qe9.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/dffpipe_qe9.tdf          ;         ;
-; db/cmpr_c66.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/cmpr_c66.tdf             ;         ;
-; db/cmpr_b66.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/cmpr_b66.tdf             ;         ;
-; db/mux_j28.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/mux_j28.tdf              ;         ;
-; db/dcfifo_aol1.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/dcfifo_aol1.tdf          ;         ;
-; db/alt_synch_pipe_e98.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/alt_synch_pipe_e98.tdf   ;         ;
-; db/alt_synch_pipe_0e8.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/alt_synch_pipe_0e8.tdf   ;         ;
-; db/dffpipe_re9.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/dffpipe_re9.tdf          ;         ;
-; altddio_out.tdf                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altddio_out.tdf              ;         ;
-; stratix_ddio.inc                   ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ddio.inc             ;         ;
-; cyclone_ddio.inc                   ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/cyclone_ddio.inc             ;         ;
-; lpm_mux.inc                        ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
-; stratix_lcell.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_lcell.inc            ;         ;
-; db/ddio_out_p9j.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/ddio_out_p9j.tdf         ;         ;
-; altsyncram.tdf                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
-; stratix_ram_block.inc              ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
-; lpm_decode.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc               ;         ;
-; a_rdenreg.inc                      ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                ;         ;
-; altrom.inc                         ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                   ;         ;
-; altram.inc                         ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altram.inc                   ;         ;
-; db/altsyncram_3sa1.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/altsyncram_3sa1.tdf      ;         ;
-; db/altsyncram_ubc2.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/altsyncram_ubc2.tdf      ;         ;
-; sld_mod_ram_rom.vhd                ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd          ;         ;
-; sld_rom_sr.vhd                     ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_rom_sr.vhd               ;         ;
-; lpm_add_sub.tdf                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_add_sub.tdf              ;         ;
-; addcore.inc                        ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/addcore.inc                  ;         ;
-; look_add.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/look_add.inc                 ;         ;
-; bypassff.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/bypassff.inc                 ;         ;
-; altshift.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altshift.inc                 ;         ;
-; alt_stratix_add_sub.inc            ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc      ;         ;
-; db/add_sub_pve.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_pve.tdf          ;         ;
-; db/add_sub_q0f.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_q0f.tdf          ;         ;
-; lpm_compare.tdf                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_compare.tdf              ;         ;
-; comptree.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/comptree.inc                 ;         ;
-; db/cmpr_6mg.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/cmpr_6mg.tdf             ;         ;
-; db/add_sub_lqj.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_lqj.tdf          ;         ;
-; db/add_sub_70f.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_70f.tdf          ;         ;
-; db/add_sub_9ve.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_9ve.tdf          ;         ;
-; db/add_sub_kpj.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_kpj.tdf          ;         ;
-; db/add_sub_kij.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_kij.tdf          ;         ;
-; db/add_sub_p3j.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_p3j.tdf          ;         ;
-; db/add_sub_fff.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_fff.tdf          ;         ;
-; db/add_sub_onf.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_onf.tdf          ;         ;
-; db/cmpr_seg.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/cmpr_seg.tdf             ;         ;
-; db/add_sub_oge.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_oge.tdf          ;         ;
-; db/add_sub_d8c.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_d8c.tdf          ;         ;
-; db/add_sub_0lg.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_0lg.tdf          ;         ;
-; db/add_sub_ptb.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_ptb.tdf          ;         ;
-; lpm_mult.tdf                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mult.tdf                 ;         ;
-; multcore.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/multcore.inc                 ;         ;
-; db/mult_8ks.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/mult_8ks.tdf             ;         ;
-; db/altsyncram_nmo.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/altsyncram_nmo.tdf       ;         ;
-; db/add_sub_4pi.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_4pi.tdf          ;         ;
-; db/add_sub_hth.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_hth.tdf          ;         ;
-; db/add_sub_hif.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_hif.tdf          ;         ;
-; db/add_sub_p8f.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_p8f.tdf          ;         ;
-; db/cmpr_jng.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/cmpr_jng.tdf             ;         ;
-; db/mult_2ds.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/mult_2ds.tdf             ;         ;
-; db/mult_0ds.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/mult_0ds.tdf             ;         ;
-; db/mult_9ds.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/mult_9ds.tdf             ;         ;
-; db/mult_7ds.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/mult_7ds.tdf             ;         ;
-; sld_hub.vhd                        ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_hub.vhd                  ;         ;
-; sld_jtag_hub.vhd                   ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd             ;         ;
-; lpm_divide.tdf                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf               ;         ;
-; abs_divider.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc              ;         ;
-; sign_div_unsign.inc                ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc          ;         ;
-; db/lpm_divide_jkm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/lpm_divide_jkm.tdf       ;         ;
-; db/sign_div_unsign_bnh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/sign_div_unsign_bnh.tdf  ;         ;
-; db/alt_u_div_aaf.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/alt_u_div_aaf.tdf        ;         ;
-; db/add_sub_7pc.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_7pc.tdf          ;         ;
-; db/add_sub_8pc.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/add_sub_8pc.tdf          ;         ;
-; db/lpm_divide_fkm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/lpm_divide_fkm.tdf       ;         ;
-; db/sign_div_unsign_7nh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/sign_div_unsign_7nh.tdf  ;         ;
-; db/alt_u_div_2af.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/alt_u_div_2af.tdf        ;         ;
-; db/lpm_divide_5bm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/lpm_divide_5bm.tdf       ;         ;
-; db/sign_div_unsign_qlh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/sign_div_unsign_qlh.tdf  ;         ;
-; db/alt_u_div_87f.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/alt_u_div_87f.tdf        ;         ;
-; db/lpm_divide_5jm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/lpm_divide_5jm.tdf       ;         ;
-; db/sign_div_unsign_tlh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/sign_div_unsign_tlh.tdf  ;         ;
-; db/alt_u_div_e7f.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/alt_u_div_e7f.tdf        ;         ;
-; db/lpm_divide_2jm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/db/lpm_divide_2jm.tdf       ;         ;
-+------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
++------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; ../rtl/i2c_ov5640_rgb565_cfg.v     ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/i2c_ov5640_rgb565_cfg.v     ;         ;
+; ../rtl/ov5640_hdmi.v               ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/ov5640_hdmi.v               ;         ;
+; ../rtl/kalman/IP/MULT.v            ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/MULT.v            ;         ;
+; ../rtl/kalman/IP/DIV.v             ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/DIV.v             ;         ;
+; ../rtl/kalman/IP/ADD.v             ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/ADD.v             ;         ;
+; ../rtl/kalman/Kalman_update.v      ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/Kalman_update.v      ;         ;
+; ../rtl/kalman/Kalman_forecastTow.v ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/Kalman_forecastTow.v ;         ;
+; ../rtl/kalman/Kalman_forecastOne.v ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/Kalman_forecastOne.v ;         ;
+; ../rtl/kalman/IP/convert.v         ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/convert.v         ;         ;
+; ../rtl/kalman/IP/ROM.v             ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/ROM.v             ;         ;
+; ../rtl/kalman/ROM_drive.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/ROM_drive.v          ;         ;
+; ../rtl/kalman/Kalman.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/Kalman.v             ;         ;
+; ../rtl/seg_src/sel_seg_code.v      ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/seg_src/sel_seg_code.v      ;         ;
+; ../rtl/seg_src/sel_encode.v        ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/seg_src/sel_encode.v        ;         ;
+; ../rtl/seg_src/seg_show.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/seg_src/seg_show.v          ;         ;
+; ../rtl/seg_src/seg_encode.v        ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/seg_src/seg_encode.v        ;         ;
+; ../rtl/seg_src/freq1.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/seg_src/freq1.v             ;         ;
+; ../rtl/hmj_ld/UartTx.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hmj_ld/UartTx.v             ;         ;
+; ../rtl/hmj_ld/UartRx.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hmj_ld/UartRx.v             ;         ;
+; ../rtl/hmj_ld/RecDecode.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hmj_ld/RecDecode.v          ;         ;
+; ../rtl/hmj_ld/hmj_ld_top.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hmj_ld/hmj_ld_top.v         ;         ;
+; ../rtl/hmj_ld/Controller.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hmj_ld/Controller.v         ;         ;
+; ../rtl/hdmi/video_driver.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hdmi/video_driver.v         ;         ;
+; ../rtl/hdmi/serializer_10_to_1.v   ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hdmi/serializer_10_to_1.v   ;         ;
+; ../rtl/hdmi/hdmi_top.v             ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hdmi/hdmi_top.v             ;         ;
+; ../rtl/hdmi/dvi_transmitter_top.v  ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hdmi/dvi_transmitter_top.v  ;         ;
+; ../rtl/hdmi/dvi_encoder.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hdmi/dvi_encoder.v          ;         ;
+; ../rtl/hdmi/asyn_rst_syn.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/hdmi/asyn_rst_syn.v         ;         ;
+; ipcore/ddio_out/ddio_out.v         ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/ddio_out/ddio_out.v  ;         ;
+; ../rtl/sdram/wrfifo.v              ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/wrfifo.v              ;         ;
+; ../rtl/sdram/sdram_top.v           ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/sdram_top.v           ;         ;
+; ../rtl/sdram/sdram_para.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/sdram_para.v          ;         ;
+; ../rtl/sdram/sdram_fifo_ctrl.v     ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/sdram_fifo_ctrl.v     ;         ;
+; ../rtl/sdram/sdram_data.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/sdram_data.v          ;         ;
+; ../rtl/sdram/sdram_ctrl.v          ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/sdram_ctrl.v          ;         ;
+; ../rtl/sdram/sdram_controller.v    ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/sdram_controller.v    ;         ;
+; ../rtl/sdram/sdram_cmd.v           ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/sdram_cmd.v           ;         ;
+; ../rtl/sdram/rdfifo.v              ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/rdfifo.v              ;         ;
+; ../rtl/i2c_dri.v                   ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/i2c_dri.v                   ;         ;
+; ../rtl/cmos_capture_data.v         ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/cmos_capture_data.v         ;         ;
+; ipcore/pll_hdmi.v                  ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/pll_hdmi.v           ;         ;
+; ipcore/pll_clk.v                   ; yes             ; User Wizard-Generated File   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/pll_clk.v            ;         ;
+; my_top.v                           ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/my_top.v                    ;         ;
+; ../rtl/ld_rec_en_unit.v            ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/ld_rec_en_unit.v            ;         ;
+; ../rtl/key_control.v               ; yes             ; User Verilog HDL File        ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/key_control.v               ;         ;
+; altpll.tdf                         ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altpll.tdf                        ;         ;
+; aglobal131.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                    ;         ;
+; stratix_pll.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_pll.inc                   ;         ;
+; stratixii_pll.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratixii_pll.inc                 ;         ;
+; cycloneii_pll.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/cycloneii_pll.inc                 ;         ;
+; db/pll_clk_altpll.v                ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/pll_clk_altpll.v         ;         ;
+; db/pll_hdmi_altpll.v               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/pll_hdmi_altpll.v        ;         ;
+; dcfifo.tdf                         ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/dcfifo.tdf                        ;         ;
+; lpm_counter.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_counter.inc                   ;         ;
+; lpm_add_sub.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_add_sub.inc                   ;         ;
+; altdpram.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                      ;         ;
+; a_graycounter.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_graycounter.inc                 ;         ;
+; a_fefifo.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_fefifo.inc                      ;         ;
+; a_gray2bin.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_gray2bin.inc                    ;         ;
+; dffpipe.inc                        ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/dffpipe.inc                       ;         ;
+; alt_sync_fifo.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/alt_sync_fifo.inc                 ;         ;
+; lpm_compare.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_compare.inc                   ;         ;
+; altsyncram_fifo.inc                ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram_fifo.inc               ;         ;
+; db/dcfifo_nnl1.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/dcfifo_nnl1.tdf          ;         ;
+; db/a_gray2bin_7ib.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/a_gray2bin_7ib.tdf       ;         ;
+; db/a_graycounter_677.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/a_graycounter_677.tdf    ;         ;
+; db/a_graycounter_2lc.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/a_graycounter_2lc.tdf    ;         ;
+; db/altsyncram_em31.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/altsyncram_em31.tdf      ;         ;
+; db/dffpipe_pe9.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/dffpipe_pe9.tdf          ;         ;
+; db/alt_synch_pipe_vd8.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/alt_synch_pipe_vd8.tdf   ;         ;
+; db/dffpipe_qe9.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/dffpipe_qe9.tdf          ;         ;
+; db/cmpr_c66.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/cmpr_c66.tdf             ;         ;
+; db/cmpr_b66.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/cmpr_b66.tdf             ;         ;
+; db/mux_j28.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/mux_j28.tdf              ;         ;
+; db/dcfifo_aol1.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/dcfifo_aol1.tdf          ;         ;
+; db/alt_synch_pipe_e98.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/alt_synch_pipe_e98.tdf   ;         ;
+; db/alt_synch_pipe_0e8.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/alt_synch_pipe_0e8.tdf   ;         ;
+; db/dffpipe_re9.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/dffpipe_re9.tdf          ;         ;
+; altddio_out.tdf                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altddio_out.tdf                   ;         ;
+; stratix_ddio.inc                   ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ddio.inc                  ;         ;
+; cyclone_ddio.inc                   ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/cyclone_ddio.inc                  ;         ;
+; lpm_mux.inc                        ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                       ;         ;
+; stratix_lcell.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_lcell.inc                 ;         ;
+; db/ddio_out_p9j.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/ddio_out_p9j.tdf         ;         ;
+; altsyncram.tdf                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                    ;         ;
+; stratix_ram_block.inc              ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc             ;         ;
+; lpm_decode.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                    ;         ;
+; a_rdenreg.inc                      ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                     ;         ;
+; altrom.inc                         ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                        ;         ;
+; altram.inc                         ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altram.inc                        ;         ;
+; db/altsyncram_3sa1.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/altsyncram_3sa1.tdf      ;         ;
+; db/altsyncram_ubc2.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/altsyncram_ubc2.tdf      ;         ;
+; sld_mod_ram_rom.vhd                ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd               ;         ;
+; sld_rom_sr.vhd                     ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                    ;         ;
+; lpm_add_sub.tdf                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                   ;         ;
+; addcore.inc                        ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/addcore.inc                       ;         ;
+; look_add.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/look_add.inc                      ;         ;
+; bypassff.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/bypassff.inc                      ;         ;
+; altshift.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altshift.inc                      ;         ;
+; alt_stratix_add_sub.inc            ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc           ;         ;
+; db/add_sub_pve.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_pve.tdf          ;         ;
+; db/add_sub_q0f.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_q0f.tdf          ;         ;
+; lpm_compare.tdf                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_compare.tdf                   ;         ;
+; comptree.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/comptree.inc                      ;         ;
+; db/cmpr_6mg.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/cmpr_6mg.tdf             ;         ;
+; db/add_sub_lqj.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_lqj.tdf          ;         ;
+; db/add_sub_70f.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_70f.tdf          ;         ;
+; db/add_sub_9ve.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_9ve.tdf          ;         ;
+; db/add_sub_kpj.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_kpj.tdf          ;         ;
+; db/add_sub_kij.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_kij.tdf          ;         ;
+; db/add_sub_p3j.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_p3j.tdf          ;         ;
+; db/add_sub_fff.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_fff.tdf          ;         ;
+; db/add_sub_onf.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_onf.tdf          ;         ;
+; db/cmpr_seg.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/cmpr_seg.tdf             ;         ;
+; db/add_sub_oge.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_oge.tdf          ;         ;
+; db/add_sub_d8c.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_d8c.tdf          ;         ;
+; db/add_sub_0lg.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_0lg.tdf          ;         ;
+; db/add_sub_ptb.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_ptb.tdf          ;         ;
+; lpm_mult.tdf                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mult.tdf                      ;         ;
+; multcore.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/multcore.inc                      ;         ;
+; db/mult_8ks.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/mult_8ks.tdf             ;         ;
+; db/altsyncram_nmo.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/altsyncram_nmo.tdf       ;         ;
+; db/add_sub_4pi.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_4pi.tdf          ;         ;
+; db/add_sub_hth.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_hth.tdf          ;         ;
+; db/add_sub_hif.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_hif.tdf          ;         ;
+; db/add_sub_p8f.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_p8f.tdf          ;         ;
+; db/cmpr_jng.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/cmpr_jng.tdf             ;         ;
+; db/mult_2ds.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/mult_2ds.tdf             ;         ;
+; db/mult_0ds.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/mult_0ds.tdf             ;         ;
+; db/mult_9ds.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/mult_9ds.tdf             ;         ;
+; db/mult_7ds.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/mult_7ds.tdf             ;         ;
+; sld_hub.vhd                        ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_hub.vhd                       ;         ;
+; sld_jtag_hub.vhd                   ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                  ;         ;
+; lpm_divide.tdf                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf                    ;         ;
+; abs_divider.inc                    ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc                   ;         ;
+; sign_div_unsign.inc                ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc               ;         ;
+; db/lpm_divide_jkm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/lpm_divide_jkm.tdf       ;         ;
+; db/sign_div_unsign_bnh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/sign_div_unsign_bnh.tdf  ;         ;
+; db/alt_u_div_aaf.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/alt_u_div_aaf.tdf        ;         ;
+; db/add_sub_7pc.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_7pc.tdf          ;         ;
+; db/add_sub_8pc.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/add_sub_8pc.tdf          ;         ;
+; db/lpm_divide_fkm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/lpm_divide_fkm.tdf       ;         ;
+; db/sign_div_unsign_7nh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/sign_div_unsign_7nh.tdf  ;         ;
+; db/alt_u_div_2af.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/alt_u_div_2af.tdf        ;         ;
+; db/lpm_divide_5bm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/lpm_divide_5bm.tdf       ;         ;
+; db/sign_div_unsign_qlh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/sign_div_unsign_qlh.tdf  ;         ;
+; db/alt_u_div_87f.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/alt_u_div_87f.tdf        ;         ;
+; db/lpm_divide_5jm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/lpm_divide_5jm.tdf       ;         ;
+; db/sign_div_unsign_tlh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/sign_div_unsign_tlh.tdf  ;         ;
+; db/alt_u_div_e7f.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/alt_u_div_e7f.tdf        ;         ;
+; db/lpm_divide_2jm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/db/lpm_divide_2jm.tdf       ;         ;
++------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------------+
@@ -520,23 +520,23 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------------------+
 ; Resource                                    ; Usage                         ;
 +---------------------------------------------+-------------------------------+
-; Estimated Total logic elements              ; 4,487                         ;
+; Estimated Total logic elements              ; 4,491                         ;
 ;                                             ;                               ;
-; Total combinational functions               ; 4099                          ;
+; Total combinational functions               ; 4103                          ;
 ; Logic element usage by number of LUT inputs ;                               ;
-;     -- 4 input functions                    ; 1393                          ;
-;     -- 3 input functions                    ; 1022                          ;
-;     -- <=2 input functions                  ; 1684                          ;
+;     -- 4 input functions                    ; 1392                          ;
+;     -- 3 input functions                    ; 1028                          ;
+;     -- <=2 input functions                  ; 1683                          ;
 ;                                             ;                               ;
 ; Logic elements by mode                      ;                               ;
-;     -- normal mode                          ; 3115                          ;
+;     -- normal mode                          ; 3119                          ;
 ;     -- arithmetic mode                      ; 984                           ;
 ;                                             ;                               ;
 ; Total registers                             ; 1248                          ;
 ;     -- Dedicated logic registers            ; 1232                          ;
 ;     -- I/O registers                        ; 32                            ;
 ;                                             ;                               ;
-; I/O pins                                    ; 90                            ;
+; I/O pins                                    ; 87                            ;
 ; Total memory bits                           ; 37376                         ;
 ; Embedded Multiplier 9-bit elements          ; 0                             ;
 ; Total PLLs                                  ; 2                             ;
@@ -544,7 +544,7 @@ applicable agreement for further details.
 ;                                             ;                               ;
 ; Maximum fan-out node                        ; ov5640_hdmi:ov5640_hdmi|rst_n ;
 ; Maximum fan-out                             ; 475                           ;
-; Total fan-out                               ; 17194                         ;
+; Total fan-out                               ; 17203                         ;
 ; Average fan-out                             ; 3.08                          ;
 +---------------------------------------------+-------------------------------+
 
@@ -554,7 +554,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                         ; Library Name ;
 +---------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |my_top                                                                   ; 4099 (46)         ; 1232 (19)    ; 37376       ; 0            ; 0       ; 0         ; 90   ; 0            ; |my_top                                                                                                                                                                                                     ; work         ;
+; |my_top                                                                   ; 4103 (51)         ; 1232 (19)    ; 37376       ; 0            ; 0       ; 0         ; 87   ; 0            ; |my_top                                                                                                                                                                                                     ; work         ;
 ;    |Kalman:Kalman|                                                        ; 89 (0)            ; 54 (0)       ; 4608        ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|Kalman:Kalman                                                                                                                                                                                       ; work         ;
 ;       |Kalman_forecastOne:Kalman_forecastOne1|                            ; 14 (14)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|Kalman:Kalman|Kalman_forecastOne:Kalman_forecastOne1                                                                                                                                                ; work         ;
 ;       |ROM_drive:ROM_drive1|                                              ; 75 (12)           ; 46 (9)       ; 4608        ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|Kalman:Kalman|ROM_drive:ROM_drive1                                                                                                                                                                  ; work         ;
@@ -564,7 +564,7 @@ applicable agreement for further details.
 ;                   |altsyncram_ubc2:altsyncram1|                           ; 0 (0)             ; 0 (0)        ; 4608        ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|Kalman:Kalman|ROM_drive:ROM_drive1|ROM:ROM1|altsyncram:altsyncram_component|altsyncram_3sa1:auto_generated|altsyncram_ubc2:altsyncram1                                                              ; work         ;
 ;                   |sld_mod_ram_rom:mgl_prim2|                             ; 63 (40)           ; 37 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|Kalman:Kalman|ROM_drive:ROM_drive1|ROM:ROM1|altsyncram:altsyncram_component|altsyncram_3sa1:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                ; work         ;
 ;                      |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr| ; 23 (23)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|Kalman:Kalman|ROM_drive:ROM_drive1|ROM:ROM1|altsyncram:altsyncram_component|altsyncram_3sa1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr             ; work         ;
-;    |hmj_ld_top:hmj_ld1_top|                                               ; 1261 (0)          ; 237 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top                                                                                                                                                                              ; work         ;
+;    |hmj_ld_top:hmj_ld1_top|                                               ; 1259 (0)          ; 237 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top                                                                                                                                                                              ; work         ;
 ;       |Controller:Controller|                                             ; 37 (37)           ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|Controller:Controller                                                                                                                                                        ; work         ;
 ;       |RecDecode:RecDecode|                                               ; 21 (21)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|RecDecode:RecDecode                                                                                                                                                          ; work         ;
 ;       |UartRx:comb_3|                                                     ; 61 (61)           ; 106 (106)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|UartRx:comb_3                                                                                                                                                                ; work         ;
@@ -593,10 +593,10 @@ applicable agreement for further details.
 ;          |lpm_divide_5bm:auto_generated|                                  ; 93 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated                                                                                                                                ; work         ;
 ;             |sign_div_unsign_qlh:divider|                                 ; 93 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider                                                                                                    ; work         ;
 ;                |alt_u_div_87f:divider|                                    ; 93 (93)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider                                                                              ; work         ;
-;       |lpm_divide:Mod2|                                                   ; 126 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod2                                                                                                                                                              ; work         ;
-;          |lpm_divide_5bm:auto_generated|                                  ; 126 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod2|lpm_divide_5bm:auto_generated                                                                                                                                ; work         ;
-;             |sign_div_unsign_qlh:divider|                                 ; 126 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod2|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider                                                                                                    ; work         ;
-;                |alt_u_div_87f:divider|                                    ; 126 (126)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod2|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider                                                                              ; work         ;
+;       |lpm_divide:Mod2|                                                   ; 124 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod2                                                                                                                                                              ; work         ;
+;          |lpm_divide_5bm:auto_generated|                                  ; 124 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod2|lpm_divide_5bm:auto_generated                                                                                                                                ; work         ;
+;             |sign_div_unsign_qlh:divider|                                 ; 124 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod2|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider                                                                                                    ; work         ;
+;                |alt_u_div_87f:divider|                                    ; 124 (124)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod2|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider                                                                              ; work         ;
 ;       |lpm_divide:Mod3|                                                   ; 162 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod3                                                                                                                                                              ; work         ;
 ;          |lpm_divide_5bm:auto_generated|                                  ; 162 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod3|lpm_divide_5bm:auto_generated                                                                                                                                ; work         ;
 ;             |sign_div_unsign_qlh:divider|                                 ; 162 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld1_top|lpm_divide:Mod3|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider                                                                                                    ; work         ;
@@ -638,7 +638,7 @@ applicable agreement for further details.
 ;                |alt_u_div_87f:divider|                                    ; 160 (160)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|hmj_ld_top:hmj_ld2_top|lpm_divide:Mod3|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider                                                                              ; work         ;
 ;    |key_control:key_control|                                              ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|key_control:key_control                                                                                                                                                                             ; work         ;
 ;    |ld_rec_en_unit:ld_rec_en_unit|                                        ; 37 (37)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ld_rec_en_unit:ld_rec_en_unit                                                                                                                                                                       ; work         ;
-;    |ov5640_hdmi:ov5640_hdmi|                                              ; 1389 (3)          ; 645 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi                                                                                                                                                                             ; work         ;
+;    |ov5640_hdmi:ov5640_hdmi|                                              ; 1388 (3)          ; 645 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi                                                                                                                                                                             ; work         ;
 ;       |cmos_capture_data:u_cmos_capture_data|                             ; 35 (35)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|cmos_capture_data:u_cmos_capture_data                                                                                                                                       ; work         ;
 ;       |hdmi_top:u_hdmi_top|                                               ; 367 (0)           ; 172 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top                                                                                                                                                         ; work         ;
 ;          |dvi_transmitter_top:u_rgb2dvi_0|                                ; 303 (0)           ; 150 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0                                                                                                                         ; work         ;
@@ -675,17 +675,17 @@ applicable agreement for further details.
 ;                   |altddio_out:ALTDDIO_OUT_component|                     ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_r|ddio_out:u_ddio_out_p|altddio_out:ALTDDIO_OUT_component                                 ; work         ;
 ;                      |ddio_out_p9j:auto_generated|                        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_r|ddio_out:u_ddio_out_p|altddio_out:ALTDDIO_OUT_component|ddio_out_p9j:auto_generated     ; work         ;
 ;          |video_driver:u_video_driver|                                    ; 64 (64)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|video_driver:u_video_driver                                                                                                                             ; work         ;
-;       |i2c_dri:u_i2c_dr|                                                  ; 105 (105)         ; 54 (54)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|i2c_dri:u_i2c_dr                                                                                                                                                            ; work         ;
-;       |i2c_ov5640_rgb565_cfg:u_i2c_cfg|                                   ; 411 (411)         ; 46 (46)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|i2c_ov5640_rgb565_cfg:u_i2c_cfg                                                                                                                                             ; work         ;
+;       |i2c_dri:u_i2c_dr|                                                  ; 104 (104)         ; 54 (54)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|i2c_dri:u_i2c_dr                                                                                                                                                            ; work         ;
+;       |i2c_ov5640_rgb565_cfg:u_i2c_cfg|                                   ; 410 (410)         ; 46 (46)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|i2c_ov5640_rgb565_cfg:u_i2c_cfg                                                                                                                                             ; work         ;
 ;       |pll_clk:u_pll|                                                     ; 0 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_clk:u_pll                                                                                                                                                               ; work         ;
 ;          |altpll:altpll_component|                                        ; 0 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_clk:u_pll|altpll:altpll_component                                                                                                                                       ; work         ;
 ;             |pll_clk_altpll:auto_generated|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_clk:u_pll|altpll:altpll_component|pll_clk_altpll:auto_generated                                                                                                         ; work         ;
 ;       |pll_hdmi:pll_hdmi_inst|                                            ; 0 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_hdmi:pll_hdmi_inst                                                                                                                                                      ; work         ;
 ;          |altpll:altpll_component|                                        ; 0 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_hdmi:pll_hdmi_inst|altpll:altpll_component                                                                                                                              ; work         ;
 ;             |pll_hdmi_altpll:auto_generated|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_hdmi:pll_hdmi_inst|altpll:altpll_component|pll_hdmi_altpll:auto_generated                                                                                               ; work         ;
-;       |sdram_top:u_sdram_top|                                             ; 468 (0)           ; 338 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top                                                                                                                                                       ; work         ;
-;          |sdram_controller:u_sdram_controller|                            ; 167 (0)           ; 102 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_controller:u_sdram_controller                                                                                                                   ; work         ;
-;             |sdram_cmd:u_sdram_cmd|                                       ; 64 (64)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_controller:u_sdram_controller|sdram_cmd:u_sdram_cmd                                                                                             ; work         ;
+;       |sdram_top:u_sdram_top|                                             ; 469 (0)           ; 338 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top                                                                                                                                                       ; work         ;
+;          |sdram_controller:u_sdram_controller|                            ; 168 (0)           ; 102 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_controller:u_sdram_controller                                                                                                                   ; work         ;
+;             |sdram_cmd:u_sdram_cmd|                                       ; 65 (65)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_controller:u_sdram_controller|sdram_cmd:u_sdram_cmd                                                                                             ; work         ;
 ;             |sdram_ctrl:u_sdram_ctrl|                                     ; 100 (100)         ; 49 (49)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_controller:u_sdram_controller|sdram_ctrl:u_sdram_ctrl                                                                                           ; work         ;
 ;             |sdram_data:u_sdram_data|                                     ; 3 (3)             ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_controller:u_sdram_controller|sdram_data:u_sdram_data                                                                                           ; work         ;
 ;          |sdram_fifo_ctrl:u_sdram_fifo_ctrl|                              ; 301 (76)          ; 236 (40)     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl                                                                                                                     ; work         ;
@@ -726,8 +726,8 @@ applicable agreement for further details.
 ;       |sel_seg_code:sel_seg_code_dut|                                     ; 26 (0)            ; 23 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|seg_show:seg_show|sel_seg_code:sel_seg_code_dut                                                                                                                                                     ; work         ;
 ;          |seg_encode:seg_encode_dut|                                      ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|seg_show:seg_show|sel_seg_code:sel_seg_code_dut|seg_encode:seg_encode_dut                                                                                                                           ; work         ;
 ;          |sel_code:sel_code_dut|                                          ; 19 (19)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|seg_show:seg_show|sel_seg_code:sel_seg_code_dut|sel_code:sel_code_dut                                                                                                                               ; work         ;
-;    |sld_hub:auto_hub|                                                     ; 113 (1)           ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|sld_hub:auto_hub                                                                                                                                                                                    ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                      ; 112 (75)          ; 80 (52)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                       ; work         ;
+;    |sld_hub:auto_hub|                                                     ; 115 (1)           ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|sld_hub:auto_hub                                                                                                                                                                                    ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                      ; 114 (77)          ; 80 (52)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                       ; work         ;
 ;          |sld_rom_sr:hub_info_reg|                                        ; 20 (20)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                               ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                      ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |my_top|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                             ; work         ;
 +---------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
@@ -745,32 +745,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                                     ;
-+--------+---------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-; Vendor ; IP Core Name  ; Version ; Release Date ; License Type ; Entity Instance                                                                                                                             ; IP Include File                                                            ;
-+--------+---------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-; Altera ; ALTFP_ADD_SUB ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_forecastOne:Kalman_forecastOne1|ADD:ADD_One1                                                                   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/ADD.v            ;
-; Altera ; ALTFP_MULT    ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_forecastOne:Kalman_forecastOne1|MULT:MULT_One1                                                                 ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/MULT.v           ;
-; Altera ; ALTFP_ADD_SUB ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_forecastTow:Kalman_forecastTow1|ADD:ADD_Tow1                                                                   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/ADD.v            ;
-; Altera ; ALTFP_DIV     ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_forecastTow:Kalman_forecastTow1|DIV:DIV_Tow1                                                                   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/DIV.v            ;
-; Altera ; ALTFP_ADD_SUB ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_update:Kalman_update1|ADD:ADD_Three1                                                                           ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/ADD.v            ;
-; Altera ; ALTFP_MULT    ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_update:Kalman_update1|MULT:MULT_Three1                                                                         ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/MULT.v           ;
-; Altera ; ROM: 1-PORT   ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|ROM_drive:ROM_drive1|ROM:ROM1                                                                                         ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/ROM.v            ;
-; Altera ; ALTFP_CONVERT ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|convert:convert1                                                                                                      ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/IP/convert.v        ;
-; Altera ; ALTPLL        ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_hdmi:pll_hdmi_inst                                                                                      ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/pll_hdmi.v          ;
-; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_b|ddio_out:u_ddio_out_n   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/ddio_out/ddio_out.v ;
-; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_b|ddio_out:u_ddio_out_p   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/ddio_out/ddio_out.v ;
-; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_clk|ddio_out:u_ddio_out_n ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/ddio_out/ddio_out.v ;
-; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_clk|ddio_out:u_ddio_out_p ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/ddio_out/ddio_out.v ;
-; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_g|ddio_out:u_ddio_out_n   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/ddio_out/ddio_out.v ;
-; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_g|ddio_out:u_ddio_out_p   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/ddio_out/ddio_out.v ;
-; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_r|ddio_out:u_ddio_out_n   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/ddio_out/ddio_out.v ;
-; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_r|ddio_out:u_ddio_out_p   ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/ddio_out/ddio_out.v ;
-; Altera ; ALTPLL        ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_clk:u_pll                                                                                               ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/ipcore/pll_clk.v           ;
-; Altera ; FIFO          ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|rdfifo:u_rdfifo                                     ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/rdfifo.v             ;
-; Altera ; FIFO          ; N/A     ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo                                     ; C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/wrfifo.v             ;
-+--------+---------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                                          ;
++--------+---------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+; Vendor ; IP Core Name  ; Version ; Release Date ; License Type ; Entity Instance                                                                                                                             ; IP Include File                                                                 ;
++--------+---------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+; Altera ; ALTFP_ADD_SUB ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_forecastOne:Kalman_forecastOne1|ADD:ADD_One1                                                                   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/ADD.v            ;
+; Altera ; ALTFP_MULT    ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_forecastOne:Kalman_forecastOne1|MULT:MULT_One1                                                                 ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/MULT.v           ;
+; Altera ; ALTFP_ADD_SUB ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_forecastTow:Kalman_forecastTow1|ADD:ADD_Tow1                                                                   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/ADD.v            ;
+; Altera ; ALTFP_DIV     ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_forecastTow:Kalman_forecastTow1|DIV:DIV_Tow1                                                                   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/DIV.v            ;
+; Altera ; ALTFP_ADD_SUB ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_update:Kalman_update1|ADD:ADD_Three1                                                                           ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/ADD.v            ;
+; Altera ; ALTFP_MULT    ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|Kalman_update:Kalman_update1|MULT:MULT_Three1                                                                         ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/MULT.v           ;
+; Altera ; ROM: 1-PORT   ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|ROM_drive:ROM_drive1|ROM:ROM1                                                                                         ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/ROM.v            ;
+; Altera ; ALTFP_CONVERT ; 13.1    ; N/A          ; N/A          ; |my_top|Kalman:Kalman|convert:convert1                                                                                                      ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/kalman/IP/convert.v        ;
+; Altera ; ALTPLL        ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_hdmi:pll_hdmi_inst                                                                                      ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/pll_hdmi.v          ;
+; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_b|ddio_out:u_ddio_out_n   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/ddio_out/ddio_out.v ;
+; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_b|ddio_out:u_ddio_out_p   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/ddio_out/ddio_out.v ;
+; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_clk|ddio_out:u_ddio_out_n ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/ddio_out/ddio_out.v ;
+; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_clk|ddio_out:u_ddio_out_p ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/ddio_out/ddio_out.v ;
+; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_g|ddio_out:u_ddio_out_n   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/ddio_out/ddio_out.v ;
+; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_g|ddio_out:u_ddio_out_p   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/ddio_out/ddio_out.v ;
+; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_r|ddio_out:u_ddio_out_n   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/ddio_out/ddio_out.v ;
+; Altera ; ALTDDIO_OUT   ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|serializer_10_to_1:serializer_r|ddio_out:u_ddio_out_p   ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/ddio_out/ddio_out.v ;
+; Altera ; ALTPLL        ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|pll_clk:u_pll                                                                                               ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/ipcore/pll_clk.v           ;
+; Altera ; FIFO          ; 13.1    ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|rdfifo:u_rdfifo                                     ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/rdfifo.v             ;
+; Altera ; FIFO          ; N/A     ; N/A          ; N/A          ; |my_top|ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo                                     ; C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/rtl/sdram/wrfifo.v             ;
++--------+---------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -2952,9 +2952,9 @@ Encoding Type:  One-Hot
 ; ov5640_hdmi:ov5640_hdmi|i2c_ov5640_rgb565_cfg:u_i2c_cfg|i2c_rh_wl                                                                                                                         ; 2       ;
 ; ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|asyn_rst_syn:reset_syn|reset_2                                                                                ; 44      ;
 ; ov5640_hdmi:ov5640_hdmi|hdmi_top:u_hdmi_top|dvi_transmitter_top:u_rgb2dvi_0|asyn_rst_syn:reset_syn|reset_1                                                                                ; 1       ;
-; ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_nnl1:auto_generated|rdemp_eq_comp_lsb_aeb                  ; 3       ;
-; ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_nnl1:auto_generated|rdemp_eq_comp_msb_aeb                  ; 3       ;
-; ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_nnl1:auto_generated|a_graycounter_677:rdptr_g1p|counter3a0 ; 9       ;
+; ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_nnl1:auto_generated|rdemp_eq_comp_lsb_aeb                  ; 2       ;
+; ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_nnl1:auto_generated|rdemp_eq_comp_msb_aeb                  ; 2       ;
+; ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_nnl1:auto_generated|a_graycounter_677:rdptr_g1p|counter3a0 ; 8       ;
 ; ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_aol1:auto_generated|a_graycounter_2lc:wrptr_g1p|counter6a0 ; 7       ;
 ; ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_nnl1:auto_generated|a_graycounter_2lc:wrptr_g1p|counter6a0 ; 8       ;
 ; ov5640_hdmi:ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_nnl1:auto_generated|a_graycounter_677:rdptr_g1p|parity4    ; 4       ;
@@ -7797,21 +7797,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Apr 18 17:03:54 2024
+    Info: Processing started: Tue May 14 14:38:36 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ov7725_hdmi -c ov7725_hdmi
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/i2c_ov5640_rgb565_cfg.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/i2c_ov5640_rgb565_cfg.v
     Info (12023): Found entity 1: i2c_ov5640_rgb565_cfg
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/ov5640_hdmi.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/ov5640_hdmi.v
     Info (12023): Found entity 1: ov5640_hdmi
-Info (12021): Found 2 design units, including 2 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/ip/mult.v
+Info (12021): Found 2 design units, including 2 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/ip/mult.v
     Info (12023): Found entity 1: MULT_altfp_mult_9tn
     Info (12023): Found entity 2: MULT
-Info (12021): Found 3 design units, including 3 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/ip/div.v
+Info (12021): Found 3 design units, including 3 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/ip/div.v
     Info (12023): Found entity 1: DIV_altfp_div_pst_0de
     Info (12023): Found entity 2: DIV_altfp_div_ach
     Info (12023): Found entity 3: DIV
-Info (12021): Found 22 design units, including 22 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/ip/add.v
+Info (12021): Found 22 design units, including 22 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/ip/add.v
     Info (12023): Found entity 1: ADD_altbarrel_shift_35e
     Info (12023): Found entity 2: ADD_altbarrel_shift_olb
     Info (12023): Found entity 3: ADD_altpriority_encoder_3e8
@@ -7834,13 +7834,13 @@ Info (12021): Found 22 design units, including 22 entities, in source file /user
     Info (12023): Found entity 20: ADD_altpriority_encoder_e48
     Info (12023): Found entity 21: ADD_altfp_add_sub_uek
     Info (12023): Found entity 22: ADD
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/kalman_update.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/kalman_update.v
     Info (12023): Found entity 1: Kalman_update
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/kalman_forecasttow.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/kalman_forecasttow.v
     Info (12023): Found entity 1: Kalman_forecastTow
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/kalman_forecastone.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/kalman_forecastone.v
     Info (12023): Found entity 1: Kalman_forecastOne
-Info (12021): Found 10 design units, including 10 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/ip/convert.v
+Info (12021): Found 10 design units, including 10 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/ip/convert.v
     Info (12023): Found entity 1: convert_altbarrel_shift_guf
     Info (12023): Found entity 2: convert_altpriority_encoder_3v7
     Info (12023): Found entity 3: convert_altpriority_encoder_3e8
@@ -7851,72 +7851,72 @@ Info (12021): Found 10 design units, including 10 entities, in source file /user
     Info (12023): Found entity 8: convert_altpriority_encoder_rb6
     Info (12023): Found entity 9: convert_altfp_convert_tum
     Info (12023): Found entity 10: convert
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/ip/rom.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/ip/rom.v
     Info (12023): Found entity 1: ROM
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/rom_drive.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/rom_drive.v
     Info (12023): Found entity 1: ROM_drive
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/kalman/kalman.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/kalman/kalman.v
     Info (12023): Found entity 1: Kalman
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/sel_seg_code.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/seg_src/sel_seg_code.v
     Info (12023): Found entity 1: sel_seg_code
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/sel_encode.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/seg_src/sel_encode.v
     Info (12023): Found entity 1: sel_code
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/seg_show.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/seg_src/seg_show.v
     Info (12023): Found entity 1: seg_show
 Warning (10229): Verilog HDL Expression warning at seg_encode.v(40): truncated literal to match 7 bits
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/seg_encode.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/seg_src/seg_encode.v
     Info (12023): Found entity 1: seg_encode
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/seg_src/freq1.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/seg_src/freq1.v
     Info (12023): Found entity 1: freq1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/uarttx.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hmj_ld/uarttx.v
     Info (12023): Found entity 1: UartTx
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/uartrx.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hmj_ld/uartrx.v
     Info (12023): Found entity 1: UartRx
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/recdecode.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hmj_ld/recdecode.v
     Info (12023): Found entity 1: RecDecode
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/hmj_ld_top.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hmj_ld/hmj_ld_top.v
     Info (12023): Found entity 1: hmj_ld_top
 Warning (10229): Verilog HDL Expression warning at Controller.v(106): truncated literal to match 40 bits
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hmj_ld/controller.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hmj_ld/controller.v
     Info (12023): Found entity 1: Controller
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/video_driver.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hdmi/video_driver.v
     Info (12023): Found entity 1: video_driver
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/serializer_10_to_1.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hdmi/serializer_10_to_1.v
     Info (12023): Found entity 1: serializer_10_to_1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/hdmi_top.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hdmi/hdmi_top.v
     Info (12023): Found entity 1: hdmi_top
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/dvi_transmitter_top.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hdmi/dvi_transmitter_top.v
     Info (12023): Found entity 1: dvi_transmitter_top
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/dvi_encoder.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hdmi/dvi_encoder.v
     Info (12023): Found entity 1: dvi_encoder
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/hdmi/asyn_rst_syn.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/hdmi/asyn_rst_syn.v
     Info (12023): Found entity 1: asyn_rst_syn
 Info (12021): Found 1 design units, including 1 entities, in source file ipcore/ddio_out/ddio_out.v
     Info (12023): Found entity 1: ddio_out
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/wrfifo.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/sdram/wrfifo.v
     Info (12023): Found entity 1: wrfifo
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_top.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/sdram/sdram_top.v
     Info (12023): Found entity 1: sdram_top
-Info (12021): Found 0 design units, including 0 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_para.v
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_fifo_ctrl.v
+Info (12021): Found 0 design units, including 0 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/sdram/sdram_para.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/sdram/sdram_fifo_ctrl.v
     Info (12023): Found entity 1: sdram_fifo_ctrl
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_data.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/sdram/sdram_data.v
     Info (12023): Found entity 1: sdram_data
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_ctrl.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/sdram/sdram_ctrl.v
     Info (12023): Found entity 1: sdram_ctrl
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_controller.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/sdram/sdram_controller.v
     Info (12023): Found entity 1: sdram_controller
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/sdram_cmd.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/sdram/sdram_cmd.v
     Info (12023): Found entity 1: sdram_cmd
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/sdram/rdfifo.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/sdram/rdfifo.v
     Info (12023): Found entity 1: rdfifo
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/ov7725_hdmi.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/ov7725_hdmi.v
     Info (12023): Found entity 1: ov7725_hdmi
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/i2c_ov7725_rgb565_cfg.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/i2c_ov7725_rgb565_cfg.v
     Info (12023): Found entity 1: i2c_ov7725_rgb565_cfg
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/i2c_dri.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/i2c_dri.v
     Info (12023): Found entity 1: i2c_dri
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/cmos_capture_data.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/cmos_capture_data.v
     Info (12023): Found entity 1: cmos_capture_data
 Info (12021): Found 1 design units, including 1 entities, in source file ipcore/pll_hdmi.v
     Info (12023): Found entity 1: pll_hdmi
@@ -7926,16 +7926,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file my_top.
     Info (12023): Found entity 1: my_top
 Warning (10229): Verilog HDL Expression warning at ld_rec_en_unit.v(13): truncated literal to match 16 bits
 Warning (10229): Verilog HDL Expression warning at ld_rec_en_unit.v(19): truncated literal to match 16 bits
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/ld_rec_en_unit.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/ld_rec_en_unit.v
     Info (12023): Found entity 1: ld_rec_en_unit
-Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/my_hmbld_ov5640_ok/rtl/key_control.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/a/desktop/bishe/ok/my_hmbld_ov5640_beep/rtl/key_control.v
     Info (12023): Found entity 1: key_control
 Critical Warning (10846): Verilog HDL Instantiation warning at hmj_ld_top.v(39): instance has no name
 Info (12127): Elaborating entity "my_top" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at my_top.v(130): truncated value with size 32 to match size of target (1)
-Warning (10034): Output port "o_bj_led2" at my_top.v(39) has no driver
-Warning (10034): Output port "o_bj_led3" at my_top.v(40) has no driver
-Warning (10034): Output port "o_bj_led4" at my_top.v(41) has no driver
+Warning (10230): Verilog HDL assignment warning at my_top.v(127): truncated value with size 32 to match size of target (1)
 Info (12128): Elaborating entity "ov5640_hdmi" for hierarchy "ov5640_hdmi:ov5640_hdmi"
 Info (12128): Elaborating entity "pll_clk" for hierarchy "ov5640_hdmi:ov5640_hdmi|pll_clk:u_pll"
 Info (12128): Elaborating entity "altpll" for hierarchy "ov5640_hdmi:ov5640_hdmi|pll_clk:u_pll|altpll:altpll_component"
@@ -8712,22 +8709,19 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "cam_pwdn" is stuck at GND
     Warning (13410): Pin "sdram_dqm[0]" is stuck at GND
     Warning (13410): Pin "sdram_dqm[1]" is stuck at GND
-    Warning (13410): Pin "o_bj_led2" is stuck at GND
-    Warning (13410): Pin "o_bj_led3" is stuck at GND
-    Warning (13410): Pin "o_bj_led4" is stuck at GND
     Warning (13410): Pin "o_seg[7]" is stuck at VCC
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 3759 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_12_result_int[0]~10"
-    Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_13_result_int[0]~10"
-    Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_14_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_9_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_10_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_11_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_12_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_13_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_14_result_int[0]~10"
+    Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_12_result_int[0]~10"
+    Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_13_result_int[0]~10"
+    Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_14_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_15_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_15_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld1_top|lpm_divide:Mod2|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_15_result_int[0]~10"
@@ -8742,28 +8736,28 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "hmj_ld_top:hmj_ld2_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_12_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld2_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_13_result_int[0]~10"
     Info (17048): Logic cell "hmj_ld_top:hmj_ld2_top|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_14_result_int[0]~10"
-Info (144001): Generated suppressed messages file C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/output_files/ov7725_hdmi.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/output_files/ov7725_hdmi.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 2 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "key_hmjld"
-Info (21057): Implemented 4683 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4684 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
-    Info (21059): Implemented 56 output pins
+    Info (21059): Implemented 53 output pins
     Info (21060): Implemented 17 bidirectional pins
-    Info (21061): Implemented 4537 logic cells
+    Info (21061): Implemented 4541 logic cells
     Info (21064): Implemented 41 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 76 warnings
-    Info: Peak virtual memory: 4790 megabytes
-    Info: Processing ended: Thu Apr 18 17:04:11 2024
-    Info: Elapsed time: 00:00:17
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 70 warnings
+    Info: Peak virtual memory: 4794 megabytes
+    Info: Processing ended: Tue May 14 14:38:54 2024
+    Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/a/Desktop/bishe/my_hmbld_ov5640_ok/par/output_files/ov7725_hdmi.map.smsg.
+The suppressed messages can be found in C:/Users/a/Desktop/bishe/OK/my_hmbld_ov5640_beep/par/output_files/ov7725_hdmi.map.smsg.
 
 

@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Apr 18 17:04:23 2024
+Fitter Status : Successful - Tue May 14 14:39:07 2024
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : ov7725_hdmi
 Top-level Entity Name : my_top
 Family : Cyclone IV E
 Device : EP4CE10F17C8
 Timing Models : Final
-Total logic elements : 4,367 / 10,320 ( 42 % )
-    Total combinational functions : 4,105 / 10,320 ( 40 % )
+Total logic elements : 4,369 / 10,320 ( 42 % )
+    Total combinational functions : 4,109 / 10,320 ( 40 % )
     Dedicated logic registers : 1,232 / 10,320 ( 12 % )
 Total registers : 1248
-Total pins : 90 / 180 ( 50 % )
+Total pins : 87 / 180 ( 48 % )
 Total virtual pins : 0
 Total memory bits : 37,376 / 423,936 ( 9 % )
 Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
