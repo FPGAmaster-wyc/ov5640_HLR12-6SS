@@ -8,7 +8,8 @@ module RecDecode(
 		DataIn,
 		
 		OutEn,
-		DistOut,		
+		DistOut,	
+		sd_data,	
 		jl_data
 		
 );
@@ -20,10 +21,12 @@ module RecDecode(
 	
 	output reg				OutEn;		// 译码完成
 	output reg	[19:0]	DistOut;		// 译码输出数据
-	output reg  [15:0]	jl_data;
+	output reg  [15:0]	jl_data;		// 距离数据
+	output reg  [15:0]	sd_data;		// 速度数据
 	
 	reg			[1:0]		STATE;
 	reg  [15:0]	jl_data_r;
+	reg  [15:0]	sd_data_r;
 
 	parameter				IDLE = 2'b00,
 								READ = 2'b01,
@@ -64,6 +67,7 @@ begin
 				OutEn <= 1'b0;				// 示例板仅有4位LED，故提取XX.XX格式的4位测量值
 				DistOut <= {DataIn[51:48],DataIn[43:40],DataIn[27:24],DataIn[19:16],DataIn[11:8]};  
 				jl_data_r <= DataIn[71:56];
+				sd_data_r <= DataIn[55:40];
 				STATE <= SEND;
 			end
 	
@@ -99,7 +103,10 @@ begin
 	if (~RstN)
 		jl_data <= 0;
 	else if (OutEn)
-		jl_data <= jl_data_r;
+		begin
+			jl_data <= jl_data_r;
+			sd_data <= sd_data_r;
+		end
 	else
 		jl_data <= jl_data;
 end

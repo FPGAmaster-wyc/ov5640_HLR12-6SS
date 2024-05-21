@@ -8,6 +8,7 @@ module hmj_ld_top (
 	
 	output [19:0] 	o_jgcs_data,
 	output 			o_jgcs_data_vld,
+	output [19:0]	sd_data,
 	output [19:0]	jl_data
 	);
 
@@ -19,6 +20,7 @@ module hmj_ld_top (
 	wire 				uart_tx_data_vld;
 	
 	wire [15:0]		jl_data_r;
+	wire [15:0]		sd_data_r;
 	
 	UartTx UartTx(
 	.Clk			(i_sys_clk			),
@@ -46,6 +48,7 @@ module hmj_ld_top (
 		
 	.OutEn		(o_jgcs_data_vld	),
 	.DistOut		(o_jgcs_data		),
+	.sd_data		(sd_data_r			),
 	.jl_data		(jl_data_r			)
 	);
 	
@@ -59,6 +62,11 @@ module hmj_ld_top (
 	.DataOut		(uart_tx_data		)
 	);
 	
+	assign sd_data[19:16] = sd_data_r/10000;    // 百位
+	assign sd_data[15:12] = sd_data_r/1000%10;  // 十位
+	assign sd_data[11:8]  = sd_data_r/100%10;   // 个位
+	assign sd_data[7:4]   = sd_data_r/10%10;    // 0.1
+	assign sd_data[3:0]   = sd_data_r%10;       // 0.01
 	
 	assign jl_data[19:16] = jl_data_r/10000;    // 百位
 	assign jl_data[15:12] = jl_data_r/1000%10;  // 十位

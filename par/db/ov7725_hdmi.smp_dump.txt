@@ -8,33 +8,6 @@ state.011 0 0 1 0 0 1
 state.100 0 1 0 0 0 1 
 state.101 1 0 0 0 0 1 
 
-State Machine - |my_top|hmj_ld_top:hmj_ld2_top|Controller:Controller|STATE
-Name STATE.RETU STATE.KEYB STATE.KEYA STATE.IDLE 
-STATE.IDLE 0 0 0 0 
-STATE.KEYA 0 0 1 1 
-STATE.KEYB 0 1 0 1 
-STATE.RETU 1 0 0 1 
-
-State Machine - |my_top|hmj_ld_top:hmj_ld2_top|RecDecode:RecDecode|STATE
-Name STATE.RETU STATE.SEND STATE.READ STATE.IDLE 
-STATE.IDLE 0 0 0 0 
-STATE.READ 0 0 1 1 
-STATE.SEND 0 1 0 1 
-STATE.RETU 1 0 0 1 
-
-State Machine - |my_top|hmj_ld_top:hmj_ld2_top|UartRx:comb_3|State
-Name State.READ State.RETU State.IDLE 
-State.IDLE 0 0 0 
-State.READ 1 0 1 
-State.RETU 0 1 1 
-
-State Machine - |my_top|hmj_ld_top:hmj_ld2_top|UartTx:UartTx|STATE
-Name STATE.RETU STATE.SEND STATE.LOAD STATE.IDLE 
-STATE.IDLE 0 0 0 0 
-STATE.LOAD 0 0 1 1 
-STATE.SEND 0 1 0 1 
-STATE.RETU 1 0 0 1 
-
 State Machine - |my_top|hmj_ld_top:hmj_ld1_top|Controller:Controller|STATE
 Name STATE.RETU STATE.KEYB STATE.KEYA STATE.IDLE 
 STATE.IDLE 0 0 0 0 

@@ -46,6 +46,7 @@ module my_top(
 //							wire or reg 
 /************************************************/
 	wire [19:0]	jl1_data;
+	wire [19:0]	sd_data;
 	wire 			jl1_data_vld;
 	wire [19:0]	jl2_data;
 	wire 			jl2_data_vld;
@@ -110,8 +111,10 @@ hmj_ld_top hmj_ld1_top(
 	
 	.o_jgcs_data		(),
 	.o_jgcs_data_vld	(jl1_data_vld		),
+	.sd_data				(sd_data				),
 	.jl_data 			(jl1_data			)
 	);
+	/*
 hmj_ld_top hmj_ld2_top(
 	.i_sys_clk			(sys_clk  			),
 	.i_reset_n			(sys_rst_n			),
@@ -124,9 +127,11 @@ hmj_ld_top hmj_ld2_top(
 	.o_jgcs_data_vld	(jl2_data_vld		),
 	.jl_data 			(jl2_data			)
 	);
-	assign o_bj_led1	= ((jl1_data < 20'd35)&&(jl1_data > 3)) ? 1 : 0;
+	*/
 	
-	assign o_bj_led2  = o_bj_led1;
+	assign o_bj_led1	= ((jl1_data < 20'd35)&&(jl1_data > 3)) ? 1 : 0;		//beep
+		
+	assign o_bj_led2  = o_bj_led1;				//led
 	
 	
 /************************************************/
@@ -176,14 +181,22 @@ seg_show seg_show(
 
 //assign show_data = show_crtl_en ? {4'd0,jl2_data} : {4'd0,jl1_data};
 
+	reg [11:0] sudu;	//数码管显示的速度 小于20
+	always @ (posedge sys_clk or negedge sys_rst_n )begin
+		if (!sys_rst_n)
+			sudu <= 0;
+		else if (sd_data <= 100)
+			sudu <= sd_data[11:0];
+	end 
+
 always @ (posedge sys_clk or negedge sys_rst_n  )
 begin
 	if (~sys_rst_n)
 		show_data <= 0;
 	else if (show_crtl_en == 1)
-		show_data <= {4'd0,jl2_data};
+		show_data <= {sudu, jl1_data[11:0]};	
 	else if (show_crtl_en == 0)
-		show_data <= {4'd0,jl1_data};	
+		show_data <= {sudu, jl1_data[11:0]};	
 	else
 		show_data <= show_data;			
 end
